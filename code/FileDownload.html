@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Download</title>
+<style>
+        body{font-family: Times New Roman;background-color: #f5f5f5}
+        div{width: 400px;margin: 0px auto;box-shadow: 0px 1px 10px #a8a8a8;background-color: #fff;padding-bottom: 10px}
+        h1{background-color: #34cbd1;text-align: center;margin-top: 0;padding: 20px;color: #fff}
+        input{display: block; margin:auto; font-size: 20px}
+        select{display: block; margin:auto; font-size: 20px}
+        p{text-align: center;font-size: 20px;color: #82a28a;margin;0}
+        input{width: 70%;border: 1px solid #34cbd1;background-color: #fff;outline: none;border-radius: 5px;height:40px;padding: 10px}
+        input[type="submit"]:hover{background-color: #54b0bc;border: 0}
+        input[type="submit"]{background-color: #34cbd1;color: #fff;cursor: pointer}
+        a{padding: 5px; border-radius: 3px; background-color: #c0eb30;text-decoration: none;display: inline-block;color: #000;}
+        a:hover{color: #fff; background-color: #4cce56;transition: all 0.3s}
+    </style>
+</head>
+<body>
+    <h1>Download File</h1>
+    <ul>
+        <li><a href="/FileDownload?fileId=1">File 1</a></li>
+        <li><a href="/FileDownload?fileId=2">File 2</a></li>
+        <!-- Add more download links as needed -->
+</ul>
+<h1>Submitted Assignments</h1>
+  
+  <table>
+    <tr>
+   
+      <th>Student RollNo</th>
+      <th>Submission Date</th>
+      <th>Download</th>
+    </tr>
+   <!-- 
+    <c:forEach var="assignment" items="${assignments}">
+      <tr>
+        <td>${assignment.name}</td>
+        <td>${assignment.studentName}</td>
+        <td>${assignment.submissionDate}</td>
+        <td>
+          <a href="/download-file?fileId=${assignment.fileId}">Download</a>
+        </td>
+      </tr>
+    </c:forEach>
+-->
+  </table>
+   
+</body>
+</html>
